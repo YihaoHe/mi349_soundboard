@@ -1,29 +1,28 @@
 body {
     background-color: azure;
-    margin: 0 auto;
 }
 
 button {
     width: 200px;
     height: 100px;
-    border-radius: 15%;
+    border-radius: 50%;
 }
 
 div {
+    margin: 15em auto;
     background-color: white;
 }
 
 .buttons{
     height: 100%;
-    width: auto;
+    width: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .primary {
-    width: 400px;
-    grid-row: 1;
-    grid-column: 1/2;
+    grid-row: 1 / 2;
+    grid-column: 1;
 }
 
 .secondaryL {
@@ -32,6 +31,6 @@ div {
 }
 
 .secondaryR {
-    grid-row: 2;
-    grid-column: 2;
+    grid-row: 3;
+    grid-column: 1;
 }

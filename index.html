@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Yihao's soundboard</title>
 </head>
 <body>
-    <button class="primary" id="blip-button">
-        Blip.
-    </button>
+    <div class="buttons">
+        <button class="primary" id="blip-button" onclick="playAudio('Soundsource/blip.wav')">
+            Blip.
+        </button>
 
-    <button class="secondary" id="boom-button">
-        Boom!!
-    </button>
+        <button class="secondary" id="boom-button" onclick="playAudio('Soundsource/boom_x.wav')">
+            Boom!!
+        </button>
 
-    <button class="secondary" id="coin-button">
-        Coin~
-    </button>
+        <button class="secondary" id="coin-button" onclick="playAudio('Soundsource/coin.wav')">
+            Coin~
+        </button>
+    </div>
+
+    <audio class="audios">
+        <source src="Soundsource/blip.wav" id="blip-sound" type="audio/wav">
+        <source src="Soundsource/boom_x.wav" id="boom-sound" type="audio/wav">
+        <source src="Soundsource/coin.wav" id="coin-sound" type="audio/wav">
+    </audio>
 
     <script src="soundboard.js"></script>
 </body>
